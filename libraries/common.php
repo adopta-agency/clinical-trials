@@ -47,7 +47,7 @@ function checkEmail($email)
 (!preg_match('/^(\\\\.|[A-Za-z0-9!#%&`_=\\/$\'*+?^{}|~.-])+$/',
                  str_replace("\\\\","",$local)))
       {
-         // character not valid in local part unless 
+         // character not valid in local part unless
          // local part is quoted
          if (!preg_match('/^"(\\\\"|[^"])+"$/',
              str_replace("\\\\","",$local)))
@@ -65,15 +65,15 @@ function checkEmail($email)
 }
 
 
-function encrypt($text,$Salt) 
-{ 
-    return trim(base64_encode(mcrypt_encrypt(MCRYPT_RIJNDAEL_256, $Salt, $text, MCRYPT_MODE_ECB, mcrypt_create_iv(mcrypt_get_iv_size(MCRYPT_RIJNDAEL_256, MCRYPT_MODE_ECB), MCRYPT_RAND)))); 
-} 
+function encrypt($text,$Salt)
+{
+    return trim(base64_encode(mcrypt_encrypt(MCRYPT_RIJNDAEL_256, $Salt, $text, MCRYPT_MODE_ECB, mcrypt_create_iv(mcrypt_get_iv_size(MCRYPT_RIJNDAEL_256, MCRYPT_MODE_ECB), MCRYPT_RAND))));
+}
 
-function decrypt($text,$Salt) 
-{ 
-    return trim(mcrypt_decrypt(MCRYPT_RIJNDAEL_256, $Salt, base64_decode($text), MCRYPT_MODE_ECB, mcrypt_create_iv(mcrypt_get_iv_size(MCRYPT_RIJNDAEL_256, MCRYPT_MODE_ECB), MCRYPT_RAND))); 
-} 
+function decrypt($text,$Salt)
+{
+    return trim(mcrypt_decrypt(MCRYPT_RIJNDAEL_256, $Salt, base64_decode($text), MCRYPT_MODE_ECB, mcrypt_create_iv(mcrypt_get_iv_size(MCRYPT_RIJNDAEL_256, MCRYPT_MODE_ECB), MCRYPT_RAND)));
+}
 
 function xmlstr_to_array($xmlstr) {
   $doc = new DOMDocument();
@@ -123,26 +123,26 @@ function domnode_to_array($node) {
 
 function PrepareFileName($PrepareString)
 	{
-		
+
 	$PrepareString = str_replace(" ","ZSPAZESZ",$PrepareString);
 	$PrepareString = preg_replace('#\W#', '', $PrepareString);
 	$PrepareString = str_replace("ZSPAZESZ","-",$PrepareString);
 	$PrepareString = strtolower($PrepareString);
-	
+
 	return $PrepareString;
 	}
-	
+
 function PrepareXMLName($PrepareString)
 	{
-		
+
 	$PrepareString = str_replace(" ","",$PrepareString);
 	$PrepareString = preg_replace('#\W#', '', $PrepareString);
 	$PrepareString = str_replace("ZSPAZESZ","",$PrepareString);
 	$PrepareString = strtolower($PrepareString);
-	
+
 	return $PrepareString;
-	}	
-	
+	}
+
  function rangeMonth($datestr) {
     date_default_timezone_set(date_default_timezone_get());
     $dt = strtotime($datestr);
@@ -157,8 +157,8 @@ function PrepareXMLName($PrepareString)
     $res['start'] = date('N', $dt)==1 ? date('Y-m-d', $dt) : date('Y-m-d', strtotime('last monday', $dt));
     $res['end'] = date('N', $dt)==7 ? date('Y-m-d', $dt) : date('Y-m-d', strtotime('next sunday', $dt));
     return $res;
-    }	
-  
+    }
+
 function prettyPrint( $json )
 {
     $result = '';
@@ -211,7 +211,7 @@ function prettyPrint( $json )
     }
 
     return $result;
-} 
+}
 
 function format_json($json, $html = false, $tabspaces = null)
     {
@@ -312,5 +312,13 @@ function prepareIdOut($id,$host)
 	$id =  str_replace("+","116",$id);
 	$id =  str_replace("=","117",$id);
 	return $id;
+	}
+
+function scrub($item)
+	{
+	$item = strip_tags($item);
+	$item = str_replace(chr(39),"",$item);
+	$item = str_replace(chr(34),"",$item);
+  return $item;
 	}
 ?>
