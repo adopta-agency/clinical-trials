@@ -21,9 +21,7 @@ layout: none
       "humanURL": "{{ site.project_url }}",
       "baseURL": "{{ site.project_url }}//apis.json",
       "tags": [
-        {% for tags in site.project_tags limit:10 %}
-        "Kin Lane"{% if forloop.last %}{% else %},{% endif %}
-        {% endfor %}
+        {% for tags in site.project_tags limit:10 %}"{{ tags }}"{% if forloop.last %}{% else %},{% endif %}{% endfor %}
       ],
       "properties": [
         {
@@ -75,9 +73,7 @@ layout: none
       "humanURL": "{{ site.project_url }}",
       "baseURL": "{{ site.project_url }}",
       "tags": [
-        {% for tags in site.project_tags limit:10 %}
-        "Kin Lane"{% if forloop.last %}{% else %},{% endif %}
-        {% endfor %}
+        {% for tags in site.project_tags limit:10 %}"{{ tags }}"{% if forloop.last %}{% else %},{% endif %}{% endfor %}
       ],
       "properties": [
         {
