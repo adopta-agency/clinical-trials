@@ -7,9 +7,7 @@ layout: none
   "description": "{{ site.project_title }}",
   "image": "https://s3.amazonaws.com/kinlane-productions/adopta-agency/adopta-agency-logo-uppercase.png",
   "tags": [
-    {% for tags in site.project_tags limit:10 %}
-    "Kin Lane"{% if forloop.last %}{% else %},{% endif %}
-    {% endfor %}
+    {% for tags in site.project_tags limit:10 %}"{{ tags }}"{% if forloop.last %}{% else %},{% endif %}{% endfor %}
   ],
   "created": "{{ page.date | date: "%Y-%m-%d" }}",
   "modified": "{{ page.date | date: "%Y-%m-%d" }}",
