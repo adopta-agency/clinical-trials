@@ -235,7 +235,7 @@ faq:
   - question: Why are you doing this?
     answer: Someone from the University of Miami contacted me after doing an Adopta Agency presentation, asking for help to adopt.
   - question: Where did this data come from?
-    answer: It could come from ClinicalTrials.gov, and specifically from their download page located at: https://clinicaltrials.gov/ct2/resources/download.
+    answer: It could come from ClinicalTrials.gov, and specifically from their download page located at https://clinicaltrials.gov/ct2/resources/download.
   - question: What are you planning on doing with this data?
     answer: Get it up as a set of JSON, and CSV files, as well as an API, then decide what downloads and endpoints would make consumption easier.
   - question: How do I talk to someone behind this project?
