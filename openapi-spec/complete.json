@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "title": "Clinical Trials",
-    "description": "An auto generated OpenAPISpec from clinical_trials.",
+    "description": "An auto generated OpenAPISpec from clinical_trials. This API is currently 100% publicly available, while we are in a beta phase, but will soon be requiring a key for heavier rates of use.",
     "termsOfService": "Going to need a TOS!",
     "version": "v1"
   },
