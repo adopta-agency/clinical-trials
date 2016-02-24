@@ -203,7 +203,7 @@ api_footer: The goal of launching these APIs is to make this data easier to cons
 
 api:
   - title: Clinical Trials
-    swagger_url: adopta-agency.github.io/clinical-trials/openapi-spec/complete.json
+    swagger_url: http://adopta-agency.github.io/clinical-trials/openapi-spec/complete.json
 
 # ---------
 # Showcase
