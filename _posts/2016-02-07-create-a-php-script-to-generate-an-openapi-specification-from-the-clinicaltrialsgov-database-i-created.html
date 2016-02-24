@@ -1,0 +1,14 @@
+---
+layout: post
+title: 'Create a PHP Script To Generate An OpenAPI Specification From The ClinicalTrials.Gov Database I Created'
+source: http://adopta-agency.github.io/clinical-trials//2016/02/07/create-a-php-script-to-generate-an-openapi-specification-from-the-clinicaltrialsgov-database-i-created/
+domain: adopta-agency.github.io
+image: 
+---
+<p><a href="http://adopta-agency.github.io/clinical-trials//2016/02/06/create-a-php-script-to-import-the-delimited-clinicaltrialsgov-data-files-into-mysql">One of my objectives around importing the ClinicalTrials.gov data</a>, is to create an API. The first step in creating an API, before we ever get programming anything, is to create an <a href="https://github.com/OAI/OpenAPI-Specification">OpenAPI Spec</a> for use as a version 1.0 scaffolding for the clinical trials data we now have stored in a MySQL database.</p>
+<p>I sure wasn't going to be hand crafting an OpenAPI Spec for this fairly large data set, so I got to work creating a crude PHP script that would do the heavy lifting for me:</p>
+<script src="https://gist.github.com/kinlane/2f13e7492d8e8c1c01de.js"></script>
+<p>This script loops through all the tables in my clinical trials database, and auto generates the necessary <a href="http://json-schema.org/">JSON schema</a> for the data structure, combined with OpenAPI Spec for describing the API interface for the clinical trials database. I have the result in a single OpenAPI Spec file, but will most likely be breaking up to make it easier to work with:</p>
+<script src="https://gist.github.com/kinlane/f5bc0be6b09f625bedd6.js"></script>
+<p>This OpenAPI Spec for the clinical trials API gives me a base blueprint I can use to generate server side code, client side code, documentation, and other essential building blocks of the API operations I put in place to support accessing the clinical trials API.</p>
+<p>I will be added better descriptions for paths, parameters, schema, and other elements of this in the future, with this definition acting as the contract for the clinical trials API.</p>
