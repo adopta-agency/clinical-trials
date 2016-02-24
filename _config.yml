@@ -25,8 +25,8 @@ github_repo: clinical-trials
 data_show: yes
 data_nav: yes
 data_title: Data Files
-data_description: This is just a sample set of dataset to show what is possible. Your mission, if you choose to accept, is to find a dataset at data.gov, or amongst the inventory of each federal agencies data.json files. Once you have found your datasatets, you can clean up, publish, and share here.
-data_footer: The goal of publishing these CSV and JSON alternatives is to make this data easier to consumer, and integrate into websites, applications, visualizations, and other integrations.
+data_description: This is a work in progress, trying to work with new ways of accessing and putting this clinical trials data to work, at the request of someone trying to integrate into their own work.
+data_footer: The goal around publishing these CSV and JSON alternatives is to make this data easier to consumer, and integrate into websites, applications, visualizations, and other integrations.
 
 # You can add one or many data sets here, with a title, and link to CSV and JSON file
 data:
