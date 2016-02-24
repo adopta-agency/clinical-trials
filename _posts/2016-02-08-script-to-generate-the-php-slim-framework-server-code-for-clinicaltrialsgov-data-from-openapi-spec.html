@@ -1,0 +1,14 @@
+---
+layout: post
+title: 'Script To Generate The PHP Slim Framework Server Code For ClinicalTrials.gov Data From OpenAPI Spec'
+source: http://adopta-agency.github.io/clinical-trials//2016/02/08/script-to-generate-the-php-slim-framework-server-code-for-clinicaltrialsgov-data-from-openapi-spec/
+domain: adopta-agency.github.io
+image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/blog/clinical-trials-generate-open-api-spec-php.png
+---
+<p><a href="http://adopta-agency.github.io/clinical-trials//2016/02/07/create-a-php-script-to-generate-an-openapi-specification-from-the-clinicaltrialsgov-database-i-created">Now I have a machine readable, OpenAPI Specification for the ClinicalTrials.gov database that I imported</a>. I can do a number of things with this specification, with the first being the generation of the server side code I will need to operate the clinical trials API.&nbsp;</p>
+<p>I use the <a href="http://www.slimframework.com/">Slim Framework</a> to deploy my APIs. It provides me a lightweight REST framework for my APIs, in the PHP language. I use PHP, because it works for me, and I see a lot of reuse of my code i government, and other circles that speak PHP.&nbsp;</p>
+<p>This code uses the clinical trials OpenAPI Spec I generated, then writes a single PHP file, with the required Slim Framework scaffolding, and what is needed to connect to the MySQL database I created. The simple scripts handle the request, and response for each of the numerous endpoints I will need to manage the large clinical trials data set.</p>
+<script src="https://gist.github.com/kinlane/14b2c51a7b06ed81cce9.js"></script>
+<p>Like my other scripts for this project, they are scrappy, far from perfect, but get the job done. I will spend time polishing and documenting them more in the future. My goal is to get this project to the point where we can have a conversation about next steps of the clinical trials API.</p>
+<p>I have my own server setup for plugging in these auto-generated Slim Framework files, which handles the DNS, web server, storage, and other moving parts of API operations for me. I hit generate, copied the Slim files over, and the API just worked. I haven't test all 100% of the endpoints, as that will come later on in the evolution of the API.</p>
+<p>Next steps are to free the data locked up in the delimited files I downloaded, and imported into the database...</p>
