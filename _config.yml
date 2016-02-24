@@ -30,10 +30,10 @@ data_footer: The goal of publishing these CSV and JSON alternatives is to make t
 
 # You can add one or many data sets here, with a title, and link to CSV and JSON file
 data:
-  - title: "Farmers Markets"
-    source_url: https://catalog.data.gov/dataset/farmers-markets-geographic-data
-    csv_url: "http://adopta-agency.github.io/adopta-blueprint/data/farmers_markets.csv"
-    json_url: "http://adopta-agency.github.io/adopta-blueprint/data/farmers_markets.json"
+  - title: "Clinical Trials"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/arm_groups.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/arm_groups.json"
 
 # ---------
 # APIs
@@ -42,18 +42,18 @@ data:
 api_show: yes
 api_nav: yes
 api_title: APIs
-api_description: This is a sample API generated from the dataset above. It is described using Swagger which allows the generation of interactive documentation, while also describing the meta data and surface area of an API.
+api_description: This is a sample API generated from the dataset above. It is described using OpenAPI Spec which allows the generation of interactive documentation, while also describing the meta data and surface area of an API.
 api_footer: The goal of launching these APIs is to make this data easier to consumer, and integrate into websites, applications, visualizations, and other integrations.
 
 api:
-  - title: Farmers Markets
-    swagger_url: http://adopta-agency.github.io/adopta-blueprint/api/farmers_markets.json
+  - title: Clinical Trials
+    swagger_url: adopta-agency.github.io/clinical-trials/openapi-spec/complete.json
 
 # ---------
 # Showcase
 # ---------
 
-showcase_show: yes
+showcase_show: no
 showcase_nav: no
 showcase_title: Showcase
 showcase_description: This is a showcase of what is being build on top of this open data and APIs. Right now it is just sample data, but when you launch for your project, you can showcase everything that is being developed.
@@ -61,14 +61,6 @@ showcase_footer: This project is designed to be used, and extended, please share
 
 showcase:
   - title: Showcase Item One
-    description: This is the description for the first thing that was build on top of the data or APIs included as part of this project.
-    image: https://s3.amazonaws.com/kinlane-productions/api-commons/api-commons-icon.png
-    url: http://apievangelist.com
-  - title: Showcase Item Two
-    description: This is the description for the first thing that was build on top of the data or APIs included as part of this project.
-    image: https://s3.amazonaws.com/kinlane-productions/api-commons/api-commons-icon.png
-    url: http://apievangelist.com
-  - title: Showcase Item Four
     description: This is the description for the first thing that was build on top of the data or APIs included as part of this project.
     image: https://s3.amazonaws.com/kinlane-productions/api-commons/api-commons-icon.png
     url: http://apievangelist.com
@@ -85,13 +77,13 @@ faq_footer: Questions that get submitted via the projects Github issue managment
 
 faq:
   - question: Why are you doing this?
-    answer: I want to make data more accessible and usable, encouraging people to build it into more websites, applications, visualizations, and anywhere it can be used.
+    answer: Someone from the University of Miami contacted me after doing an Adopta Agency presentation, asking for help to adopt.
   - question: Where did this data come from?
-    answer: It could come from data.gov, one of the data.json files of government agencies, or any other location you find the data you need.
+    answer: It could come from ClinicalTrials.gov, and specifically from their download page located at: https://clinicaltrials.gov/ct2/resources/download.
   - question: What are you planning on doing with this data?
-    answer: You can visit the <a href="http://adopta-agency.github.io/adopta-blueprint/roadmap/">roadmap</a> for more information.
+    answer: Get it up as a set of JSON, and CSV files, as well as an API, then decide what downloads and endpoints would make consumption easier.
   - question: How do I talk to someone behind this project?
-    answer: This site runs on Github Pages, and relies on Github issue management for support. <a href="https://github.com/kinlane/adopta-blueprint/issues/new">Go ahead and submit an issue</a> via the project repository.
+    answer: This site runs on Github Pages, and relies on Github issue management for support. <a href="https://github.com/adopta-agency/clinical-trials/issues">Go ahead and submit an issue</a> via the project repository.
 
 # ---------
 # Team
@@ -100,16 +92,13 @@ faq:
 team_show: yes
 team_nav: no
 team_title: Team
-team_description: This is a solo project conducted by Kin Lane as part of the Adopta.Agency project.
+team_description: This is a solo project conducted by Kin Lane as part of this Adopta.Agency project.
 team_footer: If you would like to get involved with this work, please submit an issue via the Github repo.
 
 team:
   - name: Kin Lane
     description: The API Evangelist, working to make data, content, and other digital resources more accessible.
     url: http://kinlane.com
-  - name: Audrey Watters
-    description: writer @hackeducation, ed-tech's Cassandra, author of The Monsters of Education Technology.
-    url: http://audreywatters.com/
 
 # ---------
 # Tools
@@ -128,21 +117,6 @@ tools:
   - title: Github Pages
     description: Free Project Hosting
     url: https://pages.github.com/
-  - title: Google Spreadsheets
-    description: Web-based Spreadsheets
-    url: https://www.google.com/drive/
-  - title: API Spark
-    description: API Deployment From Spreadsheets.
-    url: http://restlet.com/products/apispark/
-  - title: CSV Converter
-    description: CSV to JSON Converter
-    url: http://kinlane.github.io/csv-converter/converter.html
-  - title: JSON Editor Online
-    description: JSON Editor
-    url: http://www.jsoneditoronline.org/
-  - title: D3.js
-    description: Visualizations from CSV and JSON files.
-    url: http://d3js.org/
 
 # ---------
 # Blog
@@ -181,13 +155,11 @@ changelog_nav: yes
 # General Settings
 # ---------
 
-#versioning your peojct is good
+#versioning your project is good
 version:      1.1.1
 
 #some configurations for the site
-markdown:     rdiscount
-permalink:    pretty
-pygments:     true
+markdown:     kramdown
 
 
 #what files should be excluded
