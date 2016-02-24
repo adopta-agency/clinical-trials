@@ -6,7 +6,7 @@
     "termsOfService": "Going to need a TOS!",
     "version": "v1"
   },
-  "host": "example.host.com",
+  "host": "clinical.trials.api.adopta.agency",
   "basePath": "/",
   "schemes": [
     "http"
