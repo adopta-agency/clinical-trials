@@ -30,10 +30,166 @@ data_footer: The goal of publishing these CSV and JSON alternatives is to make t
 
 # You can add one or many data sets here, with a title, and link to CSV and JSON file
 data:
-  - title: "Clinical Trials"
+  - title: "ARM Groups"
     source_url: https://clinicaltrials.gov/ct2/resources/download
     csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/arm_groups.csv"
     json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/arm_groups.json"
+  - title: "Authorities"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/authorities.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/authorities.json"
+  - title: "Central Contacts"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/central_contacts.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/central_contacts.json"
+  - title: "Clinical Study (noclob)"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/clinical_study_noclob.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/clinical_study_noclob.json"
+  - title: "Clinical Study"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/clinical_study.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/clinical_study.json"
+  - title: "Condition Browse"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/condition_browse.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/condition_browse.json"
+  - title: "Conditions"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/conditions.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/conditions.json"
+  - title: "Delayed Results"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/delayed_results.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/delayed_results.json"
+  - title: "Designs"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/designs.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/designs.json"
+  - title: "Facilities"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/facilities.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/facilities.json"
+  - title: "Facility Contacts"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/facility_contacts.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/facility_contacts.json"
+  - title: "Intervention ARM Groups"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/intervention_arm_groups.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/intervention_arm_groups.json"
+  - title: "Intervention Browse"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/intervention_browse.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/intervention_browse.json"
+  - title: "Intervention Other Names"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/intervention_other_names.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/intervention_other_names.json"
+  - title: "Intervention"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/interventions.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/interventions.json"
+  - title: "Keywords"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/keywords.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/keywords.json"
+  - title: "Location Countries"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/location_countries.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/location_countries.json"
+  - title: "Mesh Thesaurus"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/mesh_thesaurus.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/mesh_thesaurus.json"
+  - title: "NCT Aliases"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/nct_aliases.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/nct_aliases.json"
+  - title: "Overall Officials"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/overall_officials.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/overall_officials.json"
+  - title: "References"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/references.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/references.json"
+  - title: "Removed Countries"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/removed_countries.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/removed_countries.json"
+  - title: "Reported Event Category Groups"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/reported_event_ctgy_grp.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/reported_event_ctgy_grp.json"
+  - title: "Responsible Parties"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/responsible_parties.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/responsible_parties.json"
+  - title: "Results Baseline Measure Categories"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/results_baseline_measure_catgy.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/results_baseline_measure_catgy.json"
+  - title: "Results Baseline Measure"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/results_baseline_measure.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/results_baseline_measure.json"
+  - title: "Results Baseline"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/results_baseline.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/results_baseline.json"
+  - title: "Results Outcome Analysis Groups"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/results_outcome_analysis_grp.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/results_outcome_analysis_grp.json"
+  - title: "Results Outcome Analysis"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/results_outcome_analysis.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/results_outcome_analysis.json"
+  - title: "Results Outcome Measure Categories"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/results_outcome_measure_ctgy.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/results_outcome_measure_ctgy.json"
+  - title: "Results Outcome Measure"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/results_outcome_measure.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/results_outcome_measure.json"
+  - title: "Results Outcomes"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/results_outcomes.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/results_outcomes.json"
+  - title: "Results Partflow MLSTN Group"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/results_partflow_mlstn_grp.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/results_partflow_mlstn_grp.json"
+  - title: "Results Partflow MLSTN"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/results_partflow_mlstn.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/results_partflow_mlstn.json"
+  - title: "Results Partflows"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/results_partic_flows.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/results_partic_flows.json"
+  - title: "Results Point of Contact"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/results_point_of_contact.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/results_point_of_contact.json"
+  - title: "Results Restriction Agreement"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/results_restriction_agreement.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/results_restriction_agreement.json"
+  - title: "Secondary IDs"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/secondary_ids.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/secondary_ids.json"
+  - title: "Sponsors"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/sponsors.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/sponsors.json"
+  - title: "Study Outcome"
+    source_url: https://clinicaltrials.gov/ct2/resources/download
+    csv_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/study_outcome.csv"
+    json_url: "https://s3.amazonaws.com/kinlane-productions/adopta-agency/data/clinical-trials/study_outcome.json"
 
 # ---------
 # APIs
