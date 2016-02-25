@@ -51,6 +51,45 @@
     .gist {width:100% !important;}
     .gist-file
     .gist-data {max-height: 450px;max-width: 100%;}
+
+    /*
+     * Pagination
+     *
+     * Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
+     * there are no more previous or next posts to show.
+     */
+
+    .pagination {
+      overflow: hidden; /* clearfix */
+      margin-top: 40px;
+      font-weight: bold;
+      color: #ccc;
+      text-align: center;
+      border-top: 1px solid #eee;
+    }
+    /* Pagination should float when space is plentiful */
+    @media (min-width: 990px) {
+      .pagination {
+        margin-bottom: 60px;
+        border: 1px solid #eee;
+      }
+    }
+
+    .pagination a,
+    .pagination span {
+      float: left;
+      width: 50%;
+      padding: 20px;
+    }
+    .pagination a:first-child,
+    .pagination span:first-child {
+      border-right: 1px solid #eee;
+    }
+    .pagination a:hover {
+      text-decoration: none;
+      background-color: #f5f5f5;
+    }
+
   </style>
 
 </head>
