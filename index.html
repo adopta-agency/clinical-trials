@@ -34,7 +34,7 @@ layout: page
     {% for api in site.api %}
     <li style="height: 50px; vertical-align: text-middle; line-height: 50px;">
         <span style="font-size: 18px; font-weight: bold;"><strong>{{ api.title }}</strong></span>
-        <a href="{{ api.swagger_url }}" title="Swagger API Definition" target="blank">
+        <a href="{{ api.swagger_url }}" title="OpenAPI Specification" target="blank">
           <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-swagger-round.png" width="50" align="right" />
         </a>
         <a href="http://{{ site.github_user }}.github.io/{{ site.github_repo }}/documentation/?swagger_url={{ api.swagger_url }}" title="Interactive Documentation">
