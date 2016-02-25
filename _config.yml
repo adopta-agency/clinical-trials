@@ -278,9 +278,9 @@ tools:
 # Blog
 # ---------
 
-permalink: /:categories/:year/:month/:day/:title
-paginate: 25
-paginate_path: "/blog/page:num"
+permalink: /:categories/:year/:month/:day/:title/
+paginate: 100
+paginate_path: "/blog/page:num/"
 blog_nav: yes
 
 # ---------
