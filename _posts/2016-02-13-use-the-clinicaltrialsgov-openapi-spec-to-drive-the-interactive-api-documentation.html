@@ -1,0 +1,11 @@
+---
+layout: post
+title: 'Use The ClinicalTrials.gov OpenAPI Spec To Drive The Interactive API Documentation'
+source: http://adopta-agency.github.io/clinical-trials//2016/02/13/use-the-clinicaltrialsgov-openapi-spec-to-drive-the-interactive-api-documentation/
+domain: adopta-agency.github.io
+image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/blog/clinical-trials-api-docs.png
+---
+<p><a href="http://adopta-agency.github.io/clinical-trials/documentation/?swagger_url=http://adopta-agency.github.io/clinical-trials/openapi-spec/complete.json"><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/blog/clinical-trials-api-docs.png" alt="" width="40%" align="right" /></a></p>
+<p>The reasons for having an OpenAPI Spec for the ClinicalTrials.gov data are many, <a href="http://adopta-agency.github.io/clinical-trials/documentation/?swagger_url=http://adopta-agency.github.io/clinical-trials/openapi-spec/complete.json">but one of the most obvious benefits is the ability to generate interactive API documentation for the platform</a>. I am using <a href="https://github.com/swagger-api/swagger-ui">Swagger UI</a>, as the interactive API documentation across my Adopta.Agency projects.</p>
+<p>This approach to delivering documentation is a far more hands-on approach than earlier, more static API documentation. This documentation will evolve along with the project, when I require API keys to work with the API, saving valuable compute, storage, and bandwidth resources. All I have to do is keep the OpenAPI Spec up to date, and the SwaggerUI does the rest.</p>
+<p>It is important to have up to date API documentation, helping explain what the API does, but it is even more important to have the machine readable OpenAPI spec, because it drives so many aspects of the API operations, something which acts as the contract for what is expected of the <a href="https://github.com/swagger-api/swagger-ui">clinical trials API</a>.</p>
