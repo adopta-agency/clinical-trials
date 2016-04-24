@@ -1,4 +1,4 @@
-Content API
+Clinical Trials
 =======
 
-Content API
+This is an API to make clinical trial data more accessible.
